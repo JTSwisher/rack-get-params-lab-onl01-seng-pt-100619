@@ -39,8 +39,9 @@ class Application
       search_term = req.params["q"]
       if @@items.include?(search_term)
         @@cart << search_term
+        
       else
-        resp.write "That item does not exist"
+        resp.write "We dont have that item"
       end
     end 
 
