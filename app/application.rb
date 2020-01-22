@@ -24,6 +24,9 @@ class Application
       @@cart.each do |item|
         resp.write "#{item}\n"
       end
+    elsif 
+      @@cart.size == 0 
+      resp.write "Your cart is empty"
     else 
       resp.write "Path Not Found"
     end 
