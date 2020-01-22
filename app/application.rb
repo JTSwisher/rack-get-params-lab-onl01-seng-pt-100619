@@ -41,6 +41,7 @@ class Application
         @@cart << search_term
       else
         resp.write "That item does not exist"
+      end
     end 
 
     resp.finish
